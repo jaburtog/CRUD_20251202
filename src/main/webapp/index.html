@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users CRUD API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 25px;
+        }
+        .endpoint {
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .method {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .get { background-color: #61affe; color: white; }
+        .post { background-color: #49cc90; color: white; }
+        .put { background-color: #fca130; color: white; }
+        .delete { background-color: #f93e3e; color: white; }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .description {
+            margin-top: 10px;
+            color: #666;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Users CRUD API</h1>
+        <p>Welcome to the Users CRUD Application built with Jakarta EE 10 and Clean Architecture.</p>
+        
+        <h2>API Endpoints</h2>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/api/users</code>
+            <div class="description">Get all users. Use <code>?active=true</code> to filter active users only.</div>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/api/users/{id}</code>
+            <div class="description">Get a specific user by ID.</div>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method get">GET</span>
+            <code>/api/users/email/{email}</code>
+            <div class="description">Get a user by email address.</div>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method post">POST</span>
+            <code>/api/users</code>
+            <div class="description">Create a new user. Requires JSON body with name, email, phone (optional), and active fields.</div>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method put">PUT</span>
+            <code>/api/users/{id}</code>
+            <div class="description">Update an existing user. Requires JSON body with name, email, phone, and active fields.</div>
+        </div>
+        
+        <div class="endpoint">
+            <span class="method delete">DELETE</span>
+            <code>/api/users/{id}</code>
+            <div class="description">Delete a user by ID.</div>
+        </div>
+        
+        <h2>Quick Test</h2>
+        <p>Try the API: <a href="/api/users" target="_blank">View All Users</a></p>
+        
+        <h2>Technology Stack</h2>
+        <ul>
+            <li><strong>Java 17</strong> - Programming Language</li>
+            <li><strong>Jakarta EE 10</strong> - Enterprise Platform</li>
+            <li><strong>PostgreSQL</strong> - Database</li>
+            <li><strong>Liberty</strong> - Application Server</li>
+            <li><strong>Clean Architecture</strong> - Design Pattern</li>
+        </ul>
+        
+        <h2>Documentation</h2>
+        <p>For detailed documentation, please refer to the <a href="https://github.com/jaburtog/CRUD_20251202" target="_blank">GitHub Repository</a>.</p>
+    </div>
+</body>
+</html>
