@@ -223,7 +223,7 @@ JPA is configured in `src/main/resources/META-INF/persistence.xml` with:
 
 ## 📦 Technology Stack
 
-- **Java 17** - Programming language (compatible with Java 21)
+- **Java 17** - Programming language
 - **Jakarta EE 10** - Enterprise Java platform
   - Jakarta Persistence (JPA 3.1)
   - Jakarta RESTful Web Services (JAX-RS 3.1)
